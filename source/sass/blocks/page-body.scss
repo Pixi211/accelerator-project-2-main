@@ -9,4 +9,8 @@
   font-weight: 400;
   color: $primary-color;
   background-color: $white-color;
+
+  main {
+    flex: 1;
+  }
 }
