@@ -10,13 +10,60 @@
 
 <body class="page-body">
   <!-- пример использования спрайта -->
-  <img src="/__spritemap#sprite-logo-view" width="410" height="400" alt="Это спрайт">
+  <!-- <img src="/__spritemap#sprite-logo-view" width="410" height="400" alt="Это спрайт">
   <svg>
     <use href="/__spritemap#sprite-user"></use>
-  </svg>
+  </svg> -->
   <!-- примеры требуемых атрибутов data-test="*" -->
 
-  <header class="main-header" data-test="header">header</header>
+  <header class="main-header" data-test="header">
+    <div class="main-header__wrapper">
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Переключить меню.</span>
+      </button>
+
+      <a class="main-header__logo-link" href="index.html" aria-current="page">
+        <img src="/__spritemap#sprite-logotype-view" width="142" height="42" alt="Логотип продукции Drink2Go.">
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html" aria-current="page">
+              Туры
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html" aria-current="page">
+              Обучение
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html" aria-current="page">
+              О нас
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html" aria-current="page">
+              Отзывы
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html" aria-current="page">
+              Фотографии
+            </a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html" aria-current="page">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="main-header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+    </div>
+
+  </header>
   <main>
     <div data-test="hero">hero</div>
     <div data-test="tours">tours</div>

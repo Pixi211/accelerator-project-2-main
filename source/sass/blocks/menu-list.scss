@@ -1,0 +1,40 @@
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.4px;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-list__link {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .menu-list {
+    flex-direction: row;
+    gap: 30px;
+    padding: 24px 0;
+  }
+
+  .menu-list__link {
+    font-weight: 400;
+    letter-spacing: unset;
+    text-transform: capitalize;
+  }
+}

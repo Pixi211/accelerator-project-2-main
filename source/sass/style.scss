@@ -7,11 +7,13 @@
 /* GLOBAL */
 @import "./common/variables.scss";
 @import "./common/fonts.scss";
-// @import "./common/global.scss";
-// @import "./common/visually-hidden.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 /* COMPONENTS */
 
 
 /* BLOCKS */
 @import "./blocks/page-body.scss";
+@import "./blocks/menu-list.scss";
+@import "./blocks/main-header.scss";
