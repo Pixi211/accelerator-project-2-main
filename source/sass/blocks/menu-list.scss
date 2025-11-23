@@ -1,10 +1,12 @@
 .menu-list {
   margin: 0;
-  padding: 0;
+  padding: 15px 0 48px 15px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: 20px;
+  background-color: $additional-color;
 }
 
 .menu-list__link {
@@ -17,15 +19,21 @@
   letter-spacing: 0.4px;
 }
 
+
 @media (min-width: $tablet-width) {
+  .menu-list {
+    padding: 31px 0 68px 45px;
+    gap: 25px;
+  }
+
   .menu-list__link {
     font-size: 16px;
     line-height: 16px;
   }
 }
 
-@media (min-width: $tablet-width) {
 
+@media (min-width: $desktop-width) {
   .menu-list {
     flex-direction: row;
     gap: 30px;
