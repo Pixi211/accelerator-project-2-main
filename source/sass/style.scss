@@ -11,9 +11,10 @@
 @import "./common/visually-hidden.scss";
 
 /* COMPONENTS */
-
+@import "./components/button.scss";
 
 /* BLOCKS */
 @import "./blocks/page-body.scss";
 @import "./blocks/menu-list.scss";
 @import "./blocks/main-header.scss";
+@import "./blocks/hero.scss";

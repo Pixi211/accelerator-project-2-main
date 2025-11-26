@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  min-height: 56px;
+  width: 180px;
+  padding: 20px 5px;
+  //max-width!
+  color: $white-color;
+  background-color: $additional-color;
+  outline: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $white-color;
+  color: $active-color;
+  outline: 1px solid $active-color;
+}
+
+.button:focus {
+  background-color: $white-color;
+  color: $active-color;
+  outline: none;
+}
+
+.button:active {
+  background-color: $active-color;
+  color: $white-color;
+  outline: none;
+}
+
+.button[disabled] {
+  background-color: $disabled-color;
+  color: $white-color;
+  pointer-events: none;
+}
+
+// .arrow-button {
+//   mask-image: url("/__spritemap#sprite-arrow-right-stick-view");
+// }
