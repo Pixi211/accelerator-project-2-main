@@ -1,0 +1,49 @@
+.main-title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: left;
+  color: $primary-color;
+}
+
+.main-title--duplicate {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 26px;
+  opacity: 3%;
+  position: absolute;
+  text-align: left;
+  color: $primary-color;
+  top: -15px;
+  left: 0;
+}
+
+.main-title__wrapper {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .main-title--duplicate {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .main-title--duplicate {
+    font-size: 55px;
+    line-height: 55px;
+    top: -17px;
+  }
+}

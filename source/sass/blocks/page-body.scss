@@ -1,4 +1,5 @@
 .page-body {
+  margin: 0;
   min-width: 320px;
   min-height: 100vh;
   display: flex;
@@ -12,5 +13,47 @@
 
   main {
     flex: 1;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 149px;
+    height: 595px;
+    top: 679px;
+    right: 0;
+    z-index: -1;
+    background-image: image-set(url("../../img/tours/tours-background-mobile@1x.webp") type("image/webp") 1x,
+        url("../../img/tours/tours-background-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/tours/tours-background-mobile@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/tours/tours-background-mobile@2x.jpg") type("image/jpeg") 2x);
+    background-repeat: no-repeat;
+    background-size: 150px 595px;
+
+
+    @media (min-width: $tablet-width) {
+      width: 422px;
+      height: 1630px;
+      top: 1024px;
+      background-size: 422px 1630px;
+      background-repeat: no-repeat;
+      background-image: image-set(url("../../img/tours/tours-background-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/tours/tours-background-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/tours/tours-background-tablet@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/tours/tours-background-tablet@2x.jpg") type("image/jpeg") 2x);
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 600px;
+      height: 1630px;
+      top: 800px;
+      background-size: 600px 1630px;
+      background-repeat: no-repeat;
+      background-image: image-set(url("../../img/tours/tours-background-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/tours/tours-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/tours/tours-background-desktop@1x.jpg") type("image/jpeg") 1x,
+          url("../../img/tours/tours-background-desktop@2x.jpg") type("image/jpeg") 2x);
+    }
   }
 }
