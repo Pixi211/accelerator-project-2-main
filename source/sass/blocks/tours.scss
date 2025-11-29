@@ -18,64 +18,8 @@
   display: none;
 }
 
-.tours .tours__button {
-  background-color: $additional-color;
-  color: $white-color;
-  width: 37px;
-  height: 35px;
-  left: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  &:hover {
-    background-color: $white-color;
-    outline: 1px solid $active-color;
-  }
-
-  &:focus {
-    background-color: $white-color;
-    outline: none;
-  }
-
-  &:active {
-    background-color: $active-color;
-  }
-
-  &:disabled {
-    background-color: $disabled-color;
-  }
-
-  &::after {
-    content: "";
-    width: 15px;
-    height: 9px;
-    mask-image: url("/__spritemap#sprite-arrow-right-stick-view");
-    background-color: $white-color;
-    background-repeat: no-repeat;
-    z-index: 10;
-    position: absolute;
-  }
-}
 .tours .tours__button svg {
   display: none;
-}
-
-.tours .tours__button--prev::after {
-  transform: rotate(180deg);
-}
-
-.tours .tours__button:hover {
-  &::after {
-    background-color: $active-color;
-  }
-}
-
-.tours .tours__button:focus {
-  &::after {
-    background-color: $active-color;
-  }
 }
 
 .tours__link {

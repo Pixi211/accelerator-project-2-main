@@ -40,6 +40,62 @@
   pointer-events: none;
 }
 
-// .arrow-button {
-//   mask-image: url("/__spritemap#sprite-arrow-right-stick-view");
-// }
+.button-long-arrow {
+  background-color: $additional-color;
+  color: $white-color;
+  width: 37px;
+  height: 35px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 15px;
+    height: 9px;
+    mask-image: url("/__spritemap#sprite-arrow-right-stick-view");
+    background-color: $white-color;
+    background-repeat: no-repeat;
+    z-index: 10;
+    position: absolute;
+  }
+
+  &:hover {
+    background-color: $white-color;
+    outline: 1px solid $active-color;
+
+    &::after {
+      background-color: $active-color;
+    }
+  }
+
+  &:focus {
+    background-color: $white-color;
+    outline: none;
+
+    &::after {
+      background-color: $active-color;
+    }
+  }
+
+  &:active {
+    background-color: $active-color;
+
+    &::after {
+      background-color: $white-color;
+    }
+  }
+
+  &:disabled {
+    background-color: $disabled-color;
+    pointer-events: none;
+  }
+}
+
+.button-long-arrow--prev::after {
+  transform: rotate(180deg);
+}
