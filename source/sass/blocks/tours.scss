@@ -64,7 +64,7 @@
   color: $additional-color;
 
   &::after {
-    background-color: $active-color;
+    background-color: $additional-color;
   }
 }
 
@@ -76,8 +76,9 @@
   }
 }
 
-.tours__link:active {
+.tours__link:disabled {
   color: $disabled-color;
+  pointer-events: none;
 
   &::after {
     background-color: $disabled-color;
