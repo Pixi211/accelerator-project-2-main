@@ -103,13 +103,13 @@
 }
 
 .tours-slide--belukha .tours-slide__feature--place .tours-slide__feature-value,
-.tours-slide--fisht .tours-slide__feature--place .tours-slide__feature-value  {
+.tours-slide--fisht .tours-slide__feature--place .tours-slide__feature-value {
   margin-right: 84px;
 }
 
 .tours-slide--manarag .tours-slide__feature--days .tours-slide__feature-value,
-.tours-slide--manarag .tours-slide__feature--nights .tours-slide__feature-value  {
-padding-left: 32px;
+.tours-slide--manarag .tours-slide__feature--nights .tours-slide__feature-value {
+  padding-left: 32px;
 }
 
 
@@ -271,5 +271,15 @@ padding-left: 32px;
 
   .tours-slide__feature--place {
     margin: 0 auto 0 0;
+  }
+
+  .tours-slide--belukha .tours-slide__feature--place .tours-slide__feature-value,
+  .tours-slide--fisht .tours-slide__feature--place .tours-slide__feature-value {
+    margin-right: 0;
+  }
+
+  .tours-slide--manarag .tours-slide__feature--days .tours-slide__feature-value,
+  .tours-slide--manarag .tours-slide__feature--nights .tours-slide__feature-value {
+    padding-left: 0;
   }
 }

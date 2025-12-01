@@ -1,0 +1,29 @@
+.instructors {}
+
+.instructors__title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.instructors__swiper {
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-width) {
+  .instructors__title {
+    margin-bottom: 38px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instructors__title {
+  margin-bottom: 16px;
+  font-size: 35px;
+  line-height: 100%;
+}
+}

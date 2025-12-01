@@ -1,0 +1,119 @@
+.instructors-slide {
+  min-height: 356px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  padding: 14px;
+}
+
+.instructors-slide:nth-child(3) {
+  order: -1;
+}
+
+.instructors-slide__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.instructors-slide__image-container {
+  width: 260px;
+  height: 200px;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructors-slide__image {
+  object-fit: cover;
+}
+
+.instructors-slide__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.instructors-slide__content cite {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $primary-color;
+  font-style: normal;
+  width: min-content;
+  display: block;
+}
+
+.instructors-slide__link {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  cursor: pointer;
+  background: transparent;
+}
+
+.instructors-slide__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 14px;
+  height: 8px;
+  mask-image: url("/__spritemap#sprite-vk-view");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background-color: $primary-color;
+}
+
+.instructors-slide__content blockquote {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .instructors-slide {
+    min-height: 388px;
+  }
+
+  .instructors-slide:nth-child(3) {
+    order: 0;
+  }
+
+  .instructors-slide__image-container {
+    width: auto;
+  }
+
+  .instructors-slide__image {
+    width: 185px;
+    height: 200px;
+    object-position: -33px 0px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .instructors-slide {
+    min-height: 356px;
+  }
+
+  .instructors-slide__image-container {
+    overflow: unset;
+    height: 200px;
+  }
+
+  .instructors-slide__image {
+    width: 255px;
+    height: 200px;
+    object-position: 0 0;
+  }
+
+}
