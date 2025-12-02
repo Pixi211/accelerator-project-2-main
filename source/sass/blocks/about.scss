@@ -1,9 +1,13 @@
 .about {}
 
 .about__wrapper {
+  padding: 20px 0 0;
+}
+
+.about__image-container {
   width: 320px;
   margin: 0 auto;
-  padding: 20px 0 0;
+  overflow: hidden;
 }
 
 .about__info {
@@ -34,10 +38,14 @@
 
 @media (min-width: $tablet-width) {
   .about__wrapper {
-    width: 768px;
     padding: 40px 0;
     display: grid;
-    grid-template-columns: 450px 318px;
+    grid-template-columns: minmax(450px, auto) 318px auto;
+  }
+
+  .about__image-container {
+    width: unset;
+    margin: 0;
   }
 
   .about__image {
@@ -71,9 +79,8 @@
 
 @media (min-width: $desktop-width) {
   .about__wrapper {
-    width: 1440px;
     padding: 0;
-    grid-template-columns: 660px 780px;
+    grid-template-columns: minmax(660px, auto) 780px auto;
   }
 
   .about__image {
@@ -101,5 +108,4 @@
     font-size: 14px;
     line-height: 22px;
   }
-
 }
