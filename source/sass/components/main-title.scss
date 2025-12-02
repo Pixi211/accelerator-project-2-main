@@ -1,5 +1,5 @@
-.main-title {
-  margin: 0;
+.main-title,
+.main-title__wrapper h2 {
   font-weight: 800;
   font-size: 22px;
   line-height: 22px;
@@ -24,7 +24,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-title {
+
+  .main-title,
+  .main-title__wrapper h2 {
     font-size: 25px;
     line-height: 25px;
   }
@@ -36,7 +38,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-title {
+
+  .main-title,
+  .main-title__wrapper h2 {
     font-size: 35px;
     line-height: 35px;
   }
