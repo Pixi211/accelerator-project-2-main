@@ -1,0 +1,105 @@
+.advantages-slide {
+  padding: 81px 10px 20px;
+  outline: 1px solid rgba(2, 102, 193, 0.102);
+  position: relative;
+  // min-height: 239px;
+}
+
+.advantages-slide--hide.swiper-slide {
+  display: none;
+}
+
+.advantages-slide__wrapper {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $additional-color;
+    top: 19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 42px;
+    height: 42px;
+    mask-repeat: no-repeat;
+    mask-size: 42px 42px;
+  }
+}
+
+.advantages-slide__wrapper--knowledge span {
+  display: none;
+}
+
+.advantages-slide__wrapper--safety::before {
+  mask-image: url("/__spritemap#sprite-safety-view");
+}
+
+.advantages-slide__wrapper--knowledge::before {
+  mask-image: url("/__spritemap#sprite-knowledge-view");
+}
+
+.advantages-slide__wrapper--equipment::before {
+  mask-image: url("/__spritemap#sprite-equipment-view");
+}
+
+.advantages-slide__wrapper--route::before {
+  mask-image: url("/__spritemap#sprite-path-view");
+}
+
+.advantages-slide__wrapper--nature::before {
+  mask-image: url("/__spritemap#sprite-eco-view");
+}
+
+.advantages-slide__wrapper h3 span {
+  padding: 0 3px 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-slide {
+    padding: 103px 20px 30px;
+    // width: 340px;*3
+    width: 324px;
+    max-width: 324px;
+    min-height: 340px;
+  }
+
+  .advantages-slide:last-child {
+    padding-bottom: 36px;
+  }
+
+  .advantages-slide__wrapper::before {
+    top: 30px;
+    width: 48px;
+    height: 48px;
+    mask-size: 48px 48px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-slide {
+    padding: 124px 20px 40px;
+    // width: auto;*3
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 329px;
+  }
+
+  .advantages-slide--hide.swiper-slide {
+    display: block;
+  }
+
+  .advantages-slide__wrapper::before {
+    top: 39px;
+    width: 54px;
+    height: 54px;
+    mask-size: 54px 54px;
+  }
+
+  .advantages-slide__wrapper--knowledge span {
+    display: initial;
+  }
+}

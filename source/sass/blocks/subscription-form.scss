@@ -1,0 +1,93 @@
+.subscription__form {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.subscription-form__input {
+  border-radius: 2px;
+  border: none;
+  outline: 1px solid rgba(2, 102, 193, 0.102);
+  width: 100%;
+  background-color: $white-color;
+  padding: 15px;
+  min-height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-form__input:hover {
+  outline: 1px solid $additional-color;
+}
+
+.subscription-form__input:focus {
+  outline: 1px solid $primary-color;
+}
+
+.subscription-form__input:disabled {
+  outline: 1px solid $disabled-color;
+}
+
+.subscription-form__input--invalid {
+  outline: 1px solid $error-color;
+}
+
+.subscription-form__input::placeholder {
+  color: rgb(45, 56, 63, 0.5);
+}
+
+
+.subscription-form__button {
+  background-color: $additional-color;
+  padding: 21px 20px 21px 19px;
+  height: 58px;
+  width: 100%;
+  font-weight: 400;
+  border: none;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .subscription__form {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .subscription-form__input {
+    height: 55px;
+    padding: 16px 0 16px 30px;
+  }
+
+  .subscription-form__button {
+    height: 56px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .subscription__form {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .subscription-form__input {
+    width: 360px;
+  }
+
+  .subscription-form__button {
+    height: 56px;
+    width: 180px;
+  }
+}

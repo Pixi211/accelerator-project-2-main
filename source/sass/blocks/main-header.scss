@@ -8,9 +8,13 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 0;
+  gap: 12px 0;
   position: relative;
 }
+
+  .main-header__logo-link {
+    color: $white-color;
+  }
 
 .main-header__toggle {
   border: none;
@@ -38,6 +42,7 @@
   width: 100%;
   left: 0;
   top: 100%;
+  z-index: 10;
 }
 
 .main-header__phone {
