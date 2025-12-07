@@ -1,6 +1,7 @@
 const header = document.querySelector('.main-header');
 const menu = header.querySelector('.main-header__nav');
 const toggleBtn = header.querySelector('.main-header__toggle');
+const menuLinks = header.querySelectorAll('.menu-list__link');
 
 
 const toggleMenu = () => {
@@ -37,4 +38,12 @@ const initDropdownMenu = () => {
   });
 };
 
-export {initDropdownMenu};
+
+menuLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    deleteDropDownMenu();
+  });
+});
+
+
+export { initDropdownMenu };
