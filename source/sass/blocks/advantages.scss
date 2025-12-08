@@ -69,7 +69,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
-    padding: 60px 0 46px;
+    padding: 60px 0 40px;
     gap: 30px;
     width: 768px;
   }
@@ -87,6 +87,7 @@
   .advantages__slides .swiper-slide {
     margin: 0;
     max-width: 324px;
+    min-width: 324px;
   }
 
   .advantages__wrapper .main-title__wrapper h2 {
@@ -150,6 +151,7 @@
     font-size: 18px;
     line-height: 18px;
     max-width: 340px;
+    padding: 0;
   }
 
   .advantages p {
@@ -180,12 +182,13 @@
   }
 
   .advantages__slide.swiper-slide.advantages__slide--hide {
-  display: block;
-}
+    display: block;
+  }
 
   .advantages__buttons {
-    bottom: 100px;
+    bottom: 89px;
     right: 50%;
+    transform: translateX(35px);
     display: flex;
     flex-direction: row;
     width: auto;

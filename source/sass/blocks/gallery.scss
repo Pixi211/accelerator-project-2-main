@@ -1,3 +1,7 @@
+.gallery {
+  overflow: hidden;
+}
+
 .gallery__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -24,6 +28,7 @@
 .gallery__content p br {
   display: none;
 }
+
 
 .gallery__slides.swiper-wrapper {
   margin: 0;
@@ -71,7 +76,7 @@
 @media (min-width: $tablet-width) {
   .gallery__wrapper {
     width: 768px;
-    padding: 54px 0 0;
+    padding: 40px 0 0;
   }
 
   .gallery__content {
@@ -81,7 +86,7 @@
   }
 
   .gallery__wrapper .main-title__wrapper h2 {
-    margin: 0 0 23px;
+    margin: 19px 0 31px;
   }
 
   .gallery__content p {
@@ -103,11 +108,14 @@
     min-width: 253px;
     max-height: 418px;
     min-height: 418px;
+    overflow: hidden;
   }
 
   .gallery__photo {
     display: block;
-    height: 210px;
+    height: 216px;
+    object-fit: contain;
+    object-position: top;
   }
 
   .gallery__slide--long .gallery__photo {
@@ -116,16 +124,21 @@
 
   .gallery__slide--group.swiper-slide {
     max-width: 252px;
-    gap: 2px;
-    height: 416px;
+    gap: 0;
+    height: 418px;
     margin-bottom: 2px;
-    justify-content: end;
+    justify-content: start;
+    padding: 0;
   }
+
+  //     .gallery__slide--group .gallery__photo:nth-child(1) {
+  // height: 214px;
+  //     }
 
   .gallery__buttons {
     display: flex;
     position: absolute;
-    bottom: 0;
+    bottom: 1px;
     right: 49px;
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +148,11 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+
+  .gallery__swiper {
+    margin-bottom: 3px;
+  }
   .gallery__wrapper {
     width: 1440px;
     padding: 135px 0 0;
@@ -174,6 +191,7 @@
 
   .gallery__photo {
     height: 233px;
+    object-fit: cover;
   }
 
   .gallery__slide--long .gallery__photo {
@@ -182,7 +200,9 @@
 
   .gallery__slide--group.swiper-slide {
     max-width: 284px;
-    justify-content: start;
+    justify-content: space-between;
+    height: auto;
+    gap: 7px;
   }
 
   .gallery__buttons {

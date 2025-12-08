@@ -18,12 +18,17 @@
   top: -15px;
   left: 0;
 }
+
 .about__wrapper .main-title--duplicate {
   top: 4px;
 }
 
 .advantages__wrapper .main-title--duplicate {
   left: 36px;
+  top: -13px;
+}
+
+.footer__content .main-title--duplicate {
   top: -13px;
 }
 
@@ -43,6 +48,14 @@
     font-size: 40px;
     line-height: 40px;
   }
+
+
+  .advantages__wrapper .main-title--duplicate {
+    left: 50%;
+    top: -16px;
+    transform: translateX(-50%);
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -57,5 +70,9 @@
     font-size: 55px;
     line-height: 55px;
     top: -17px;
+  }
+
+    .advantages__wrapper .main-title--duplicate {
+    top: -30px;
   }
 }

@@ -25,7 +25,7 @@
 }
 
 .footer__content .main-title__wrapper h2 {
-  margin: 0 0 28px;
+  margin: 1px 0 28px;
 }
 
 .footer__content p {
@@ -217,7 +217,7 @@
   list-style-type: none;
 
   display: flex;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
@@ -292,7 +292,7 @@
   height: 15px;
   mask-image: url("/__spritemap#sprite-reddit-view");
   mask-repeat: no-repeat;
-  top: 12px;
+  top: 14px;
 }
 
 .footer__policy {
@@ -321,21 +321,21 @@
   }
 
   .footer__contacts-wrapper {
-    padding-bottom: 35px;
+    padding-bottom: 40px;
   }
 
   .footer__content {
-    padding: 60px 30px 38px 45px;
+    padding: 59px 30px 40px 45px;
   }
 
   .footer__content .main-title__wrapper h2 {
-    margin-bottom: 23px;
+    margin: 0 0 23px;
     font-size: 25px;
   }
 
   .footer__content p {
     width: 480px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     font-size: 16px;
   }
 
@@ -346,11 +346,17 @@
 
   .footer__contact {
     grid-template-columns: 24px 1fr;
+    gap: 6px 10px;
 
     &::before {
       width: 24px;
       height: 24px;
+      mask-size: 22px 22px;
     }
+  }
+
+  .footer__contact--mail::before {
+    mask-size: 22px 15px;
   }
 
   .footer__contact-title {
@@ -367,7 +373,7 @@
 
   .footer__info {
     display: flex;
-    padding: 34px 45px 20px;
+    padding: 33px 45px 20px;
     flex-wrap: wrap;
     gap: 34px 42px;
   }
@@ -380,8 +386,13 @@
     display: flex;
     margin-bottom: 0;
     flex-wrap: wrap;
-    gap: 23px;
+    gap: 22px;
     align-items: center;
+    padding-top: 4px;
+  }
+
+  .footer__item:last-child {
+    margin-left: 4px;
   }
 
   .footer__socials {
@@ -407,7 +418,7 @@
   }
 
   .footer__content {
-    padding: 125px 0 0;
+    padding: 123px 0 0;
   }
 
   .footer__content .main-title__wrapper h2 {
@@ -430,7 +441,8 @@
     gap: 9px 30px;
 
     &::before {
-      top: 12px;
+      top: 14px;
+      left: 2px;
       width: 26px;
       height: 26px;
     }
@@ -451,13 +463,13 @@
 
   .footer__map {
     position: relative;
-    top: 60%;
-    translate: 0 -50%;
+    top: 25%;
+    translate: 0 19px;
   }
 
   .footer__info {
-    padding: 32px 120px;
-    gap: 14px 113px;
+    padding: 40px 120px;
+    gap: 14px 114px;
   }
 
   .footer__logo {
@@ -473,14 +485,14 @@
 
   .footer__list {
     width: 574px;
-    margin-right: 51px;
+    margin-right: 48px;
     gap: 28px;
     align-items: start;
   }
 
   .footer__item-link {
     margin-bottom: 19px;
-    padding: 14px 0 3px;
+    padding: 9px 0 3px;
     font-size: 16px;
   }
 
@@ -502,6 +514,6 @@
   }
 
   .footer__policy {
-    margin-top: 9px;
+    margin-top: 7px;
   }
 }
