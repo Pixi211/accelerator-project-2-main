@@ -17,6 +17,25 @@
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.4px;
+  outline: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid $white-color;
+  }
+
+  &:focus-visible {
+    outline-color: $white-color;
+  }
+
+  &:active {
+    color: $active-color;
+    border: none;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+    pointer-events: none;
+  }
 }
 
 

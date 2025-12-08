@@ -12,9 +12,18 @@
   position: relative;
 }
 
-  .main-header__logo-link {
-    color: $white-color;
+.main-header__logo-link {
+  color: $white-color;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .main-header__toggle {
   border: none;
@@ -52,6 +61,22 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus-visible {
+    color: $primary-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+
+  &:disabled {
+    color: $disabled-color;
+  }
 }
 
 

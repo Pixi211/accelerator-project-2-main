@@ -53,9 +53,12 @@
 .gallery__slide--group.swiper-slide {
   display: flex;
   flex-direction: column;
-  gap: 6px;
   align-items: flex-start;
+  overflow: hidden;
+  justify-content: space-between;
+  padding-bottom: 3px;
 }
+
 
 .gallery .gallery__button svg {
   display: none;
