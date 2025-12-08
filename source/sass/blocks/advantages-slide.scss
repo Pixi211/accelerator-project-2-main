@@ -2,7 +2,6 @@
   padding: 81px 10px 20px;
   outline: 1px solid rgba(2, 102, 193, 0.102);
   position: relative;
-  // min-height: 239px;
   background-color: $white-color;
 }
 
@@ -61,7 +60,6 @@
 @media (min-width: $tablet-width) {
   .advantages-slide {
     padding: 103px 20px 30px;
-    // width: 340px;*3
     width: 324px;
     max-width: 324px;
     min-height: 340px;
@@ -83,7 +81,6 @@
 @media (min-width: $desktop-width) {
   .advantages-slide {
     padding: 124px 20px 40px;
-    // width: auto;*3
     min-width: 380px;
     max-width: 380px;
     min-height: 329px;

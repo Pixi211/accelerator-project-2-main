@@ -51,7 +51,6 @@
   width: 320px;
   margin: 0 auto;
   overflow: hidden;
-  // padding: 0 20px 20px;
    padding: 56px 15px 20px;
 
 }
@@ -60,15 +59,10 @@
   margin: 0px 0 32px;
 }
 
-.reviews__swiper {}
-
 .reviews__slides {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  // overflow: hidden;
-  // display: flex;
-  // gap: 50px;
 }
 
 .reviews__slide {
@@ -82,10 +76,6 @@
 .reviews .reviews__button svg {
   display: none;
 }
-
-.reviews__button {}
-
-.reviews__button--prev {}
 
 @media (min-width: $tablet-width) {
   .reviews {
@@ -120,11 +110,6 @@
     position: absolute;
     justify-content: space-between;
   }
-
-  //   .reviews__button {}
-
-  //   .reviews__button--prev {}
-
 }
 
 
