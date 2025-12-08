@@ -1,5 +1,33 @@
 .training {
   padding: 20px 15px;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 840px;
+      height: 280px;
+      bottom: 15%;
+      right: -49%;
+      z-index: 1;
+      background-image: image-set(url("../../img/clouds/clouds-2-trainig-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/clouds/clouds-2-trainig-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/clouds/clouds-2-trainig-desktop@1x.png") type("image/png") 1x,
+          url("../../img/clouds/clouds-2-trainig-desktop@2x.png") type("image/png") 2x);
+      background-repeat: no-repeat;
+      background-size: 840px 280px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -3%;
+      right: -14%;
+      z-index: 1;
+      transform: translateX(6px);
+    }
+  }
 }
 
 .training__wrapper {

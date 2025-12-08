@@ -49,6 +49,9 @@
     line-height: 40px;
   }
 
+  .about__wrapper .main-title--duplicate {
+    top: 8px;
+  }
 
   .advantages__wrapper .main-title--duplicate {
     left: 50%;
@@ -72,7 +75,12 @@
     top: -17px;
   }
 
-    .advantages__wrapper .main-title--duplicate {
+  .about__wrapper .main-title--duplicate {
+    top: -23px;
+  }
+
+  .advantages__wrapper .main-title--duplicate {
     top: -30px;
   }
+
 }

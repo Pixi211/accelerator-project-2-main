@@ -1,7 +1,50 @@
 .reviews {
-  // padding: 20px 15px;
-margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 
+
+  &::after {
+    content: "";
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      width: 2091px;
+      height: 447px;
+      bottom: -25%;
+      right: -24%;
+      z-index: -1;
+      transform: translate(-8px, -3px);
+      background-image: image-set(url("../../img/clouds/clouds-3-reviews-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/clouds/clouds-3-reviews-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/clouds/clouds-3-reviews-desktop@1x.png") type("image/png") 1x,
+          url("../../img/clouds/clouds-3-reviews-desktop@2x.png") type("image/png") 2x);
+      background-repeat: no-repeat;
+      background-size: 2091px 447px;
+    }
+  }
+
+  &::before {
+    content: "";
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 788px;
+      height: 263px;
+      bottom: 18%;
+      right: -20%;
+      z-index: -1;
+      background-image: image-set(url("../../img/clouds/clouds-2-adv-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/clouds/clouds-2-adv-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/clouds/clouds-2-adv-tablet@1x.png") type("image/png") 1x,
+          url("../../img/clouds/clouds-2-adv-tablet@2x.png") type("image/png") 2x);
+      background-repeat: no-repeat;
+      background-size: 788px 263px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .reviews__wrapper {
@@ -10,6 +53,7 @@ margin: 0 auto;
   overflow: hidden;
   // padding: 0 20px 20px;
    padding: 56px 15px 20px;
+
 }
 
 .reviews__wrapper .main-title__wrapper h2 {
@@ -48,6 +92,7 @@ margin: 0 auto;
     padding: 40px 45px;
     width: 768px;
     overflow: hidden;
+    margin: 0 auto;
   }
 
   .reviews__wrapper {
