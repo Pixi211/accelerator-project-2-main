@@ -9,7 +9,7 @@ export const setupFormValidation = () => {
     let isValid = true;
     inputs.forEach((input) => {
       if (input.name === 'phone') {
-        const phonePattern = /^\+?\d{0,15}$/;
+        const phonePattern = /^\+7 \(\d{3}\)-\d{3}-\d{2}-\d{2}$/;
         if (!phonePattern.test(input.value)) {
           isValid = false;
           input.classList.add('subscription-form__input--invalid');

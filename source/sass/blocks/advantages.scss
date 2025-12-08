@@ -49,12 +49,13 @@
   width: 100%;
 }
 
+
 .advantages__slides .swiper-slide {
   width: 290px;
   margin: 0;
 }
 
-.advantages__slide--hide {
+.advantages__slide.swiper-slide.advantages__slide--hide {
   display: none;
 }
 
@@ -107,6 +108,7 @@
 
 
 @media (min-width: $desktop-width) {
+
   .advantages__wrapper {
     position: relative;
     gap: 0;
@@ -176,6 +178,10 @@
 
     // width: auto;
   }
+
+  .advantages__slide.swiper-slide.advantages__slide--hide {
+  display: block;
+}
 
   .advantages__buttons {
     bottom: 100px;

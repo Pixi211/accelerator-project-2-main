@@ -20,9 +20,13 @@ document.addEventListener('DOMContentLoaded', initGallerySwiper);
 addDuplicateTitle();
 
 
-document.addEventListener('DOMContentLoaded', initializeForm);
+// document.addEventListener('DOMContentLoaded', initializeForm);
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   setupFormValidation();
+// });
 
 document.addEventListener('DOMContentLoaded', () => {
+  initializeForm();
   setupFormValidation();
 });
-
